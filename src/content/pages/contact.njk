@@ -1,0 +1,686 @@
+---
+title: 'Contact Kilkenny County Painters | Free Quote'
+description: 'Contact Kilkenny County Painters for a fast free quote on exterior, interior & roof painting in Kilkenny. Call, WhatsApp or fill in our quick form today.'
+preloadImg: '/assets/images/contact-hero.jpg'
+permalink: '/contact/'
+eleventyNavigation:
+  key: Contact
+  order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<style>
+  :root {
+    --pd-primary: #1A1A1A;
+    --pd-accent: #D32F2F;
+    --pd-light: #F4F6F9;
+    --pd-white: #ffffff;
+    --pd-font-display: 'Anton', sans-serif;
+    --pd-font-body: 'Barlow', sans-serif;
+  }
+
+  .kilkenny-county-painters-contact *,
+  .kilkenny-county-painters-contact *::before,
+  .kilkenny-county-painters-contact *::after {
+    box-sizing: border-box;
+  }
+
+  .kilkenny-county-painters-contact {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: var(--pd-font-body);
+    color: var(--pd-primary);
+    background: var(--pd-white);
+  }
+
+  /* ── HERO ── */
+  .kilkenny-county-painters-contact .contact-hero {
+    position: relative;
+    background: var(--pd-primary);
+    padding: clamp(3.5rem, 10vw, 6rem) 1.25rem clamp(2.5rem, 7vw, 4rem);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .kilkenny-county-painters-contact .contact-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/assets/images/contact-hero.jpg') center/cover no-repeat;
+    opacity: 0.18;
+    z-index: 0;
+  }
+
+  .kilkenny-county-painters-contact .contact-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .kilkenny-county-painters-contact .contact-hero-eyebrow {
+    display: inline-block;
+    font-family: var(--pd-font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    margin-bottom: 1rem;
+  }
+
+  .kilkenny-county-painters-contact .contact-hero h1 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(2.6rem, 9vw, 5.5rem);
+    line-height: 0.93;
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 0 1.25rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-contact .contact-hero h1 .brush {
+    position: relative;
+    display: inline-block;
+    color: var(--pd-primary);
+    z-index: 1;
+  }
+
+  .kilkenny-county-painters-contact .contact-hero h1 .brush::before {
+    content: '';
+    position: absolute;
+    inset: -4px -10px -6px -8px;
+    background: var(--pd-accent);
+    border-radius: 44% 56% 62% 38% / 58% 42% 60% 40%;
+    transform: rotate(-1.5deg) skewX(-2deg);
+    z-index: -1;
+  }
+
+  .kilkenny-county-painters-contact .contact-hero-sub {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: rgba(255,255,255,0.82);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.55;
+    overflow-wrap: break-word;
+  }
+
+  /* torn-paper divider */
+  .kilkenny-county-painters-contact .hero-divider {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    background: var(--pd-primary);
+  }
+
+  .kilkenny-county-painters-contact .hero-divider svg {
+    display: block;
+    width: 100%;
+  }
+
+  /* ── MAIN CONTACT SECTION ── */
+  .kilkenny-county-painters-contact .contact-main {
+    background: var(--pd-light);
+    padding: clamp(2.5rem, 7vw, 4.5rem) 1.25rem;
+  }
+
+  .kilkenny-county-painters-contact .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* ── FORM ── */
+  .kilkenny-county-painters-contact .form-card {
+    background: var(--pd-white);
+    border-radius: 22px;
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    box-shadow: 0 18px 50px rgba(20,24,28,0.16);
+  }
+
+  .kilkenny-county-painters-contact .form-card .section-eyebrow {
+    font-family: var(--pd-font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+
+  .kilkenny-county-painters-contact .form-card h2 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+    line-height: 1.1;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-contact .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .kilkenny-county-painters-contact .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .kilkenny-county-painters-contact .form-group label {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--pd-primary);
+    letter-spacing: 0.03em;
+  }
+
+  .kilkenny-county-painters-contact .form-group input,
+  .kilkenny-county-painters-contact .form-group textarea {
+    font-family: var(--pd-font-body);
+    font-size: 1rem;
+    padding: 0.85rem 1rem;
+    border: 2px solid #e0e3ea;
+    border-radius: 10px;
+    background: var(--pd-light);
+    color: var(--pd-primary);
+    transition: border-color 0.2s;
+    width: 100%;
+    outline: none;
+  }
+
+  .kilkenny-county-painters-contact .form-group input:focus,
+  .kilkenny-county-painters-contact .form-group textarea:focus {
+    border-color: var(--pd-accent);
+    background: var(--pd-white);
+  }
+
+  .kilkenny-county-painters-contact .form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+  }
+
+  .kilkenny-county-painters-contact .btn-submit {
+    display: inline-block;
+    font-family: var(--pd-font-display);
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--pd-accent);
+    color: var(--pd-white);
+    border: none;
+    border-radius: 999px;
+    padding: 1rem 2.2rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 6px 22px rgba(211,47,47,0.3);
+  }
+
+  .kilkenny-county-painters-contact .btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(211,47,47,0.38);
+  }
+
+  .kilkenny-county-painters-contact .btn-submit:focus-visible {
+    outline: 3px solid var(--pd-accent);
+    outline-offset: 4px;
+  }
+
+  /* ── DETAILS CARD ── */
+  .kilkenny-county-painters-contact .details-card {
+    background: var(--pd-primary);
+    border-radius: 22px;
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    box-shadow: 0 18px 50px rgba(20,24,28,0.16);
+    color: var(--pd-white);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .kilkenny-county-painters-contact .details-card .section-eyebrow {
+    font-family: var(--pd-font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .kilkenny-county-painters-contact .details-card h2 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.1;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-contact .detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .kilkenny-county-painters-contact .detail-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--pd-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  .kilkenny-county-painters-contact .detail-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+
+  .kilkenny-county-painters-contact .detail-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+  }
+
+  .kilkenny-county-painters-contact .detail-value a,
+  .kilkenny-county-painters-contact .detail-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--pd-white);
+    text-decoration: none;
+    line-height: 1.45;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .kilkenny-county-painters-contact .detail-value a:hover {
+    color: var(--pd-accent);
+  }
+
+  .kilkenny-county-painters-contact .hours-table {
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+  }
+
+  .kilkenny-county-painters-contact .hours-table span {
+    font-weight: 700;
+    color: var(--pd-white);
+    display: inline-block;
+    min-width: 80px;
+  }
+
+  .kilkenny-county-painters-contact .review-snippet {
+    background: rgba(255,255,255,0.07);
+    border-left: 3px solid var(--pd-accent);
+    border-radius: 0 10px 10px 0;
+    padding: 0.85rem 1rem;
+  }
+
+  .kilkenny-county-painters-contact .review-stars {
+    color: #FBBF24;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .kilkenny-county-painters-contact .review-text {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.82);
+    font-style: italic;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-contact .review-author {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--pd-accent);
+    margin-top: 0.4rem;
+    display: block;
+  }
+
+  /* ── MAP ── */
+  .kilkenny-county-painters-contact .map-section {
+    background: var(--pd-white);
+    padding: clamp(2rem, 6vw, 4rem) 1.25rem;
+  }
+
+  .kilkenny-county-painters-contact .map-section .section-eyebrow {
+    font-family: var(--pd-font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .kilkenny-county-painters-contact .map-section h2 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 1.5rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-contact .map-embed {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(20,24,28,0.12);
+    aspect-ratio: 16/7;
+    min-height: 260px;
+    background: #e5e5e5;
+    width: 100%;
+  }
+
+  .kilkenny-county-painters-contact .map-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  /* ── SERVICE AREA STRIP ── */
+  .kilkenny-county-painters-contact .area-strip {
+    background: var(--pd-primary);
+    padding: clamp(1.8rem, 5vw, 3rem) 1.25rem;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-contact .area-strip .section-eyebrow {
+    font-family: var(--pd-font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .kilkenny-county-painters-contact .area-strip h2 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 0 1rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-contact .area-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .kilkenny-county-painters-contact .area-tag {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+    color: var(--pd-white);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (min-width: 768px) {
+    .kilkenny-county-painters-contact .contact-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .kilkenny-county-painters-contact .form-row {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .kilkenny-county-painters-contact .contact-grid {
+      grid-template-columns: 1.15fr 0.85fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .kilkenny-county-painters-contact .btn-submit,
+    .kilkenny-county-painters-contact .btn-submit:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Kilkenny County Painters",
+  "description": "Contact Kilkenny County Painters for a fast free quote on exterior, interior and roof painting services in Kilkenny.",
+  "url": "https://kilkennycountypainters.ie/contact/",
+  "mainEntity": {
+    "@type": "LocalBusiness",
+    "name": "Kilkenny County Painters",
+    "description": "Kilkenny's Trusted Painting Team — exterior, interior & roof painting.",
+    "telephone": "+353873566934",
+    "email": "kilkennycountypainter@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kilkenny",
+      "addressRegion": "Kilkenny",
+      "addressCountry": "IE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "2"
+    },
+    "url": "https://kilkennycountypainters.ie/"
+  }
+}
+</script>
+
+<div class="kilkenny-county-painters-contact">
+
+  <!-- HERO -->
+  <section class="contact-hero" aria-labelledby="contact-h1">
+    <div class="contact-hero-inner">
+      <span class="contact-hero-eyebrow">Free Quotes · Fast Response</span>
+      <h1 id="contact-h1">Get Your <span class="brush" style ="color:white">Fast Free</span> Quote</h1>
+      <p class="contact-hero-sub">Drop us a message and we'll get back to you quickly. Most quotes confirmed the same day.</p>
+    </div>
+  </section>
+
+
+
+  <!-- FORM + DETAILS -->
+  <section class="contact-main" aria-labelledby="contact-form-heading">
+    <div class="contact-grid">
+
+      <!-- LEFT: FORM -->
+      <div class="form-card">
+        <span class="section-eyebrow">Quick Quote Request</span>
+        <h2 id="contact-form-heading">Tell Us About Your Project</h2>
+
+        <form name="quote-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
+          <input type="hidden" name="form-name" value="quote-contact">
+          <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="+353 87 …" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-eircode">Eircode / Postcode</label>
+              <input type="text" id="contact-eircode" name="eircode" placeholder="R95 XXXX" required>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom:1rem;">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell us what you need — exterior repaint, interior rooms, roof coating…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send My Quote Request</button>
+        </form>
+      </div>
+
+      <!-- RIGHT: DETAILS -->
+      <div class="details-card" aria-label="Contact details">
+        <div>
+          <span class="section-eyebrow">Reach Us Directly</span>
+          <h2>We're Here To Help</h2>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-icon" aria-hidden="true">📞</div>
+          <div class="detail-text">
+            <span class="detail-label">Call Us</span>
+            <span class="detail-value"><a href="tel:+353873566934">+353 87 356 6934</a></span>
+          </div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-icon" aria-hidden="true">💬</div>
+          <div class="detail-text">
+            <span class="detail-label">WhatsApp</span>
+            <span class="detail-value"><a href="https://wa.me/353873566934" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a></span>
+          </div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-icon" aria-hidden="true">✉️</div>
+          <div class="detail-text">
+            <span class="detail-label">Email</span>
+            <span class="detail-value"><a href="mailto:kilkennycountypainter@gmail.com">kilkennycountypainter@gmail.com</a></span>
+          </div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-icon" aria-hidden="true">📍</div>
+          <div class="detail-text">
+            <span class="detail-label">Based In</span>
+            <span class="detail-value">Kilkenny, Ireland</span>
+          </div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-icon" aria-hidden="true">🕐</div>
+          <div class="detail-text">
+            <span class="detail-label">Business Hours</span><!-- VERIFY hours -->
+            <div class="hours-table">
+              <div><span>Mon – Fri</span> 8:00am – 6:00pm</div>
+              <div><span>Saturday</span> 9:00am – 1:00pm</div>
+              <div><span>Sunday</span> Closed</div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <div class="review-snippet" aria-label="Customer review">
+          <span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <p class="review-text">"Kevin and the team were brilliant to deal with, very professional job with updates throughout. We are delighted with the new outdoor space!"</p>
+          <span class="review-author">— Kimberly, Tipperary · 5.0 ★ Google Review</span>
+        </div>
+        -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section" aria-labelledby="map-heading">
+    <span class="section-eyebrow">Find Us</span>
+    <h2 id="map-heading">Based in Kilkenny</h2>
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38725.03606191566!2d-7.287334738767924!3d52.65429215656471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x641e37625a838b33%3A0x6677ace08ee2d109!2sKilkenny%20county%20painters!5e0!3m2!1sen!2sie!4v1785851832866!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA STRIP -->
+  <section class="area-strip" aria-labelledby="area-heading">
+    <span class="section-eyebrow">Where We Work</span>
+    <h2 id="area-heading">Serving Kilkenny &amp; Surrounding Areas</h2>
+    <div class="area-tags">
+      <span class="area-tag">Kilkenny City</span>
+      <span class="area-tag">Callan</span>
+      <span class="area-tag">Thomastown</span>
+      <span class="area-tag">Castlecomer</span>
+      <span class="area-tag">Graiguenamanagh</span>
+      <span class="area-tag">Bennettsbridge</span>
+      <span class="area-tag">Urlingford</span>
+      <span class="area-tag">Piltown</span>
+      <span class="area-tag">Co. Kilkenny</span>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+{% endblock %}

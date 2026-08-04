@@ -1,0 +1,353 @@
+---
+title: 'Privacy Policy | Kilkenny County Painters'
+description: 'Read the privacy policy for Kilkenny County Painters. We keep your data safe and never share it. Trusted painters serving Kilkenny.'
+preloadImg: '/assets/images/privacy-policy-hero.jpg'
+permalink: '/privacy-policy/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<style>
+  :root {
+    --pd-primary: #1A1A1A;
+    --pd-accent: #D32F2F;
+    --pd-light: #F4F6F9;
+    --pd-white: #ffffff;
+    --pd-font-display: 'Anton', sans-serif;
+    --pd-font-body: 'Barlow', sans-serif;
+  }
+
+  .kilkenny-county-painters-privacy-policy *,
+  .kilkenny-county-painters-privacy-policy *::before,
+  .kilkenny-county-painters-privacy-policy *::after {
+    box-sizing: border-box;
+  }
+
+  .kilkenny-county-painters-privacy-policy {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: var(--pd-font-body);
+    color: var(--pd-primary);
+    background: var(--pd-white);
+  }
+
+  /* ── HERO ── */
+  .kilkenny-county-painters-privacy-policy .privacy-policy-hero {
+    position: relative;
+    background: var(--pd-primary);
+    padding: 80px 20px 64px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-hero__eyebrow {
+    display: inline-block;
+    font-family: var(--pd-font-display);
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    margin-bottom: 16px;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-hero h1 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(2.4rem, 8vw, 5rem);
+    line-height: 0.93;
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 auto 20px;
+    max-width: 800px;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-hero h1 .highlight {
+    position: relative;
+    display: inline-block;
+    color: var(--pd-primary);
+    z-index: 1;
+    padding: 0 6px;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-hero h1 .highlight::before {
+    content: '';
+    position: absolute;
+    inset: -4px -6px;
+    background: var(--pd-accent);
+    border-radius: 44% 56% 62% 38% / 58% 42% 60% 40%;
+    transform: rotate(-1.5deg) skewX(-2deg);
+    z-index: -1;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-hero p {
+    color: #c9cdd4;
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    max-width: 560px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ── TORN DIVIDER ── */
+  .kilkenny-county-painters-privacy-policy .torn-divider {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    background: var(--pd-primary);
+  }
+
+  .kilkenny-county-painters-privacy-policy .torn-divider svg {
+    display: block;
+    width: 100%;
+  }
+
+  /* ── CONTENT SECTION ── */
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content {
+    background: var(--pd-light);
+    padding: 60px 20px;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content .inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content h2 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    text-transform: uppercase;
+    color: var(--pd-primary);
+    margin: 40px 0 12px;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content h2:first-child {
+    margin-top: 0;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content p,
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content ul {
+    padding-left: 20px;
+    margin: 0 0 16px;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content ul li {
+    margin-bottom: 6px;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content a {
+    color: var(--pd-accent);
+    text-decoration: underline;
+  }
+
+  .kilkenny-county-painters-privacy-policy .privacy-policy-content .section-divider {
+    border: none;
+    border-top: 2px solid #e0e3ea;
+    margin: 36px 0;
+  }
+
+  /* ── CTA BAND ── */
+  .kilkenny-county-painters-privacy-policy .cta-band {
+    background: var(--pd-accent);
+    padding: 56px 20px;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-privacy-policy .cta-band h2 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 0 12px;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-privacy-policy .cta-band p {
+    color: rgba(255,255,255,0.88);
+    font-size: 1.05rem;
+    margin: 0 0 28px;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-privacy-policy .btn {
+    display: inline-block;
+    font-family: var(--pd-font-display);
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 999px;
+    background: var(--pd-white);
+    color: var(--pd-accent);
+    box-shadow: 0 18px 50px rgba(20,24,28,0.16);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .kilkenny-county-painters-privacy-policy .btn:hover,
+  .kilkenny-county-painters-privacy-policy .btn:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 60px rgba(20,24,28,0.22);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .kilkenny-county-painters-privacy-policy .btn {
+      transition: none;
+    }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (min-width: 768px) {
+    .kilkenny-county-painters-privacy-policy .privacy-policy-hero {
+      padding: 100px 40px 80px;
+    }
+
+    .kilkenny-county-painters-privacy-policy .privacy-policy-content {
+      padding: 80px 40px;
+    }
+
+    .kilkenny-county-painters-privacy-policy .cta-band {
+      padding: 72px 40px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .kilkenny-county-painters-privacy-policy .privacy-policy-hero {
+      padding: 120px 60px 96px;
+    }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Privacy Policy | Kilkenny County Painters",
+  "description": "Read the privacy policy for Kilkenny County Painters. We keep your data safe and never share it.",
+  "url": "https://kilkennycountypainters.ie/privacy-policy/",
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "Kilkenny County Painters",
+    "telephone": "+353873566934",
+    "email": "kilkennycountypainter@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kilkenny",
+      "addressCountry": "IE"
+    }
+  }
+}
+</script>
+
+<div class="kilkenny-county-painters-privacy-policy">
+
+  <!-- HERO -->
+  <section class="privacy-policy-hero" aria-labelledby="hero-heading">
+    <span class="privacy-policy-hero__eyebrow">Kilkenny County Painters</span>
+    <h1 id="hero-heading">Our <span class="highlight">Privacy</span> Policy</h1>
+    <p>Straight talk on how we handle your data. No jargon, no nonsense.</p>
+  </section>
+
+  <!-- TORN DIVIDER -->
+  <div class="torn-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 88" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L0,52 Q60,88 120,58 T240,62 T360,44 T480,70 T600,48 T720,74 T840,50 T960,68 T1080,46 T1200,72 T1320,52 T1440,64 L1440,0 Z" fill="#F4F6F9"/>
+    </svg>
+  </div>
+
+  <!-- POLICY CONTENT -->
+  <section class="privacy-policy-content" aria-label="Privacy policy details">
+    <div class="inner">
+
+      <h2>Who We Are</h2>
+      <p>Kilkenny County Painters is a professional painting company based in Kilkenny, Ireland. We provide exterior house painting, interior painting, and roof painting services across Kilkenny. If you have any questions about this policy, contact us at <a href="mailto:kilkennycountypainter@gmail.com">kilkennycountypainter@gmail.com</a> or call <a href="tel:+353873566934">+353 87 356 6934</a>.</p>
+
+      <hr class="section-divider">
+
+      <h2>What Information We Collect</h2>
+      <p>We only collect what we need to give you a quote or respond to your enquiry. This may include:</p>
+      <ul>
+        <li>Your name</li>
+        <li>Your phone number</li>
+        <li>Your email address</li>
+        <li>Your address or area (so we can quote your job)</li>
+        <li>Details about the work you need done</li>
+      </ul>
+      <p>We collect this information when you fill in a contact form on our website, send us an email, or ring us directly.</p>
+
+      <hr class="section-divider">
+
+      <h2>How We Use Your Information</h2>
+      <p>Simple. We use your details to:</p>
+      <ul>
+        <li>Respond to your quote request or enquiry</li>
+        <li>Arrange a site visit or call-back</li>
+        <li>Follow up on an ongoing job</li>
+      </ul>
+      <p>We do not sell your data. We do not share it with third parties for marketing purposes. Full stop.</p>
+
+      <hr class="section-divider">
+
+      <h2>Cookies & Website Analytics</h2>
+      <p>Our website may use basic analytics tools (such as Google Analytics) to understand how visitors use the site. These tools may place cookies on your device. The data collected is anonymous and used solely to improve the website experience. You can disable cookies in your browser settings at any time.</p>
+      <p>We may also run advertising on Meta platforms (Facebook/Instagram). Meta's advertising tools may use cookies or pixel data to help us reach relevant audiences. No personally identifiable information from our contact forms is shared with Meta.</p>
+
+      <hr class="section-divider">
+
+      <h2>How Long We Keep Your Data</h2>
+      <p>We keep your contact details only as long as necessary — typically for the duration of your project and a reasonable period afterwards in case of follow-up queries. If you'd like your information deleted sooner, just ask.</p>
+
+      <hr class="section-divider">
+
+      <h2>Your Rights</h2>
+      <p>Under GDPR, you have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request that we correct or delete your data</li>
+        <li>Object to how we use your data</li>
+        <li>Withdraw consent at any time</li>
+      </ul>
+      <p>To exercise any of these rights, email us at <a href="mailto:kilkennycountypainter@gmail.com">kilkennycountypainter@gmail.com</a>. We'll respond promptly.</p>
+
+      <hr class="section-divider">
+
+      <h2>Third-Party Links</h2>
+      <p>Our website may contain links to external sites. We are not responsible for the privacy practices of those sites and recommend you read their policies separately.</p>
+
+      <hr class="section-divider">
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time. Any changes will be posted on this page. Last updated: 2025.</p>
+
+      <hr class="section-divider">
+
+      <h2>Contact Us</h2>
+      <p>Questions about this policy? Get in touch:</p>
+      <ul>
+        <li>Email: <a href="mailto:kilkennycountypainter@gmail.com">kilkennycountypainter@gmail.com</a></li>
+        <li>Phone: <a href="tel:+353873566934">+353 87 356 6934</a></li>
+        <li>Address: Kilkenny, Ireland</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" aria-label="Get in touch">
+    <h2>Ready for a Free Quote?</h2>
+    <p>No data faff — just honest painters doing great work across Kilkenny.</p>
+    <a href="/contact/" class="btn">Contact Us Today</a>
+  </section>
+
+</div>
+{% endblock %}

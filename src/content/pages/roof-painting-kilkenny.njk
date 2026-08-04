@@ -1,0 +1,1724 @@
+---
+title: 'Roof Painting Kilkenny | Kilkenny County Painters'
+description: 'Professional roof painting Kilkenny. Protect & transform your home with our expert roof coating service. Fast free quotes. Call Kilkenny County Painters today.'
+preloadImg: '/assets/images/fresh-roof.jpeg'
+permalink: '/roof-painting-kilkenny/'
+eleventyNavigation:
+  key: Roof Painting
+  order: 600
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<style>
+  :root {
+    --pd-primary: #1A1A1A;
+    --pd-accent: #D32F2F;
+    --pd-light: #F4F6F9;
+    --pd-white: #ffffff;
+    --pd-font-display: 'Anton', sans-serif;
+    --pd-font-body: 'Barlow', sans-serif;
+  }
+
+  .kilkenny-county-painters-roof-painting *,
+  .kilkenny-county-painters-roof-painting *::before,
+  .kilkenny-county-painters-roof-painting *::after {
+    box-sizing: border-box;
+  }
+
+  .kilkenny-county-painters-roof-painting {
+    font-family: var(--pd-font-body);
+    color: var(--pd-primary);
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .kilkenny-county-painters-roof-painting p,
+  .kilkenny-county-painters-roof-painting li,
+  .kilkenny-county-painters-roof-painting dd {
+    overflow-wrap: break-word;
+  }
+
+  /* ── BUTTONS ─────────────────────────────── */
+  .kilkenny-county-painters-roof-painting .btn {
+    display: inline-block;
+    font-family: var(--pd-font-display);
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.85rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .kilkenny-county-painters-roof-painting .btn:hover,
+  .kilkenny-county-painters-roof-painting .btn:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(20,24,28,0.22);
+  }
+
+  .kilkenny-county-painters-roof-painting .btn-accent {
+    background: var(--pd-accent);
+    color: var(--pd-white);
+  }
+
+  .kilkenny-county-painters-roof-painting .btn-outline {
+    background: transparent;
+    color: var(--pd-white);
+    border: 2px solid var(--pd-white);
+  }
+
+  .kilkenny-county-painters-roof-painting .btn-dark {
+    background: var(--pd-primary);
+    color: var(--pd-white);
+  }
+
+  /* ── EYEBROW ─────────────────────────────── */
+  .kilkenny-county-painters-roof-painting .eyebrow {
+    display: inline-block;
+    font-family: var(--pd-font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    margin-bottom: 0.6rem;
+  }
+
+  /* ── SECTION TITLES ──────────────────────── */
+  .kilkenny-county-painters-roof-painting .section-title {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.9rem, 5vw, 3.2rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .section-title--white {
+    color: var(--pd-white);
+  }
+
+  /* ── SECTION WRAPPER ─────────────────────── */
+  .kilkenny-county-painters-roof-painting .section-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    width: 100%;
+  }
+
+  /* ══════════════════════════════════════════
+     1. HERO
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-hero {
+    position: relative;
+    background: var(--pd-primary);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 7rem 0 5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.35;
+    display: block;
+    background: #222;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-hero__h1 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(2.9rem, 9vw, 6rem);
+    line-height: 0.92;
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 0 1.4rem;
+  }
+
+  /* Signature move 1: brush-stroke highlight */
+  .kilkenny-county-painters-roof-painting .hero-highlight {
+    position: relative;
+    display: inline-block;
+    color: var(--pd-primary);
+    z-index: 1;
+  }
+
+  .kilkenny-county-painters-roof-painting .hero-highlight::before {
+    content: '';
+    position: absolute;
+    inset: -4px -10px;
+    background: var(--pd-accent);
+    border-radius: 44% 56% 62% 38% / 58% 42% 60% 40%;
+    transform: rotate(-1.4deg) skewX(-2deg);
+    z-index: -1;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-hero__sub {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: rgba(255,255,255,0.88);
+    margin: 0 0 2.2rem;
+    line-height: 1.55;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-hero__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.8rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-hero__trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .trust-chip {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: var(--pd-white);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+  }
+
+  /* Signature move 2: torn-paper divider */
+  .kilkenny-county-painters-roof-painting .hero-divider {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    margin-top: -2px;
+  }
+
+  /* ══════════════════════════════════════════
+     2. INTRO / OVERVIEW
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-intro {
+    background: var(--pd-white);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .intro-grid__text {
+    min-width: 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .intro-grid__text p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #333;
+    margin: 0 0 1.1rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .intro-grid__image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    min-height: 260px;
+    background: #e5e5e5;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  .kilkenny-county-painters-roof-painting .intro-grid__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .kilkenny-county-painters-roof-painting .trust-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.8rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--pd-light);
+    border-radius: 12px;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .kilkenny-county-painters-roof-painting .trust-badge .stars {
+    color: #FBBF24;
+    font-size: 1rem;
+  }
+
+  /* ══════════════════════════════════════════
+     3. ALTERNATING SERVICE BLOCKS
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .service-blocks {
+    background: var(--pd-light);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block__img-wrap {
+    width: 100%;
+    aspect-ratio: 4/3;
+    min-height: 240px;
+    background: #e5e5e5;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(20,24,28,0.12);
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block__text {
+    min-width: 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block__text h3 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.55rem, 4vw, 2.2rem);
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 0 0 0.9rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block__text p {
+    font-size: 1.02rem;
+    line-height: 1.72;
+    color: #333;
+    margin: 0 0 0.85rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block__text .learn-link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    text-decoration: none;
+    border-bottom: 2px solid var(--pd-accent);
+    padding-bottom: 2px;
+    transition: opacity 0.2s;
+  }
+
+  .kilkenny-county-painters-roof-painting .service-block__text .learn-link:hover {
+    opacity: 0.75;
+  }
+
+  /* Before/After pair */
+  .kilkenny-county-painters-roof-painting .before-after-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .before-after-pair__slot {
+    position: relative;
+    aspect-ratio: 4/3;
+    min-height: 140px;
+    background: #e5e5e5;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .kilkenny-county-painters-roof-painting .before-after-pair__slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .kilkenny-county-painters-roof-painting .ba-label {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(20,24,28,0.72);
+    color: var(--pd-white);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 999px;
+  }
+
+  /* ══════════════════════════════════════════
+     4. PROCESS
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-process {
+    background: var(--pd-primary);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-process .section-title {
+    color: var(--pd-white);
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-process .eyebrow {
+    display: block;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .process-intro {
+    color: rgba(255,255,255,0.72);
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .kilkenny-county-painters-roof-painting .process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .process-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 22px;
+    padding: 2rem 1.6rem;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+  }
+
+  .kilkenny-county-painters-roof-painting .process-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 50px rgba(20,24,28,0.30);
+  }
+
+  .kilkenny-county-painters-roof-painting .process-card__num {
+    font-family: var(--pd-font-display);
+    font-size: 3.2rem;
+    line-height: 1;
+    color: var(--pd-accent);
+    margin-bottom: 0.6rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .process-card__title {
+    font-family: var(--pd-font-display);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 0 0.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .process-card__body {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ══════════════════════════════════════════
+     PRICING SECTION
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-pricing {
+    background: var(--pd-white);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .pricing-card {
+    background: var(--pd-light);
+    border-radius: 22px;
+    padding: 2rem 1.6rem;
+    box-shadow: 0 8px 28px rgba(20,24,28,0.07);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+  }
+
+  .kilkenny-county-painters-roof-painting .pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 50px rgba(20,24,28,0.14);
+  }
+
+  .kilkenny-county-painters-roof-painting .pricing-card__label {
+    font-family: var(--pd-font-display);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .pricing-card__range {
+    font-size: 1.8rem;
+    font-family: var(--pd-font-display);
+    color: var(--pd-accent);
+    line-height: 1;
+    margin: 0 0 0.6rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .pricing-card p {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    color: #444;
+    margin: 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .pricing-disclaimer {
+    margin-top: 1.8rem;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.65;
+    max-width: 700px;
+  }
+
+  /* ══════════════════════════════════════════
+     5. WHY CHOOSE US
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-why {
+    background: var(--pd-light);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-why .section-title,
+  .kilkenny-county-painters-roof-painting .roof-painting-why .eyebrow {
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .why-card {
+    background: var(--pd-white);
+    border-radius: 22px;
+    padding: 2rem 1.6rem;
+    box-shadow: 0 8px 28px rgba(20,24,28,0.07);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+  }
+
+  .kilkenny-county-painters-roof-painting .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 50px rgba(20,24,28,0.14);
+  }
+
+  .kilkenny-county-painters-roof-painting .why-card__icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.7rem;
+    line-height: 1;
+  }
+
+  .kilkenny-county-painters-roof-painting .why-card__title {
+    font-family: var(--pd-font-display);
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .why-card p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #444;
+    margin: 0;
+  }
+
+  /* ══════════════════════════════════════════
+     6. FAQ
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-faq {
+    background: var(--pd-white);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-faq .section-title,
+  .kilkenny-county-painters-roof-painting .roof-painting-faq .eyebrow {
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .faq-list {
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .faq-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1.4rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .faq-item:first-child {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .kilkenny-county-painters-roof-painting .faq-item__q {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+    text-transform: uppercase;
+    margin: 0 0 0.6rem;
+    line-height: 1.2;
+  }
+
+  .kilkenny-county-painters-roof-painting .faq-item__a {
+    font-size: 0.97rem;
+    line-height: 1.72;
+    color: #444;
+    margin: 0;
+  }
+
+  /* ══════════════════════════════════════════
+     7. TESTIMONIALS
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-testimonials {
+    background: var(--pd-primary);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-testimonials .section-title {
+    color: var(--pd-white);
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-testimonials .eyebrow {
+    display: block;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .testimonial-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 22px;
+    padding: 2rem 1.6rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .testimonial-card__stars {
+    color: #FBBF24;
+    font-size: 1.15rem;
+    margin-bottom: 0.7rem;
+    display: block;
+  }
+
+  .kilkenny-county-painters-roof-painting .testimonial-card__body {
+    color: rgba(255,255,255,0.88);
+    font-size: 1rem;
+    line-height: 1.7;
+    font-style: italic;
+    margin: 0 0 1rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .testimonial-card__author {
+    color: var(--pd-accent);
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  /* ══════════════════════════════════════════
+     8. AREAS SERVED
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-areas {
+    background: var(--pd-light);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-areas .section-title,
+  .kilkenny-county-painters-roof-painting .roof-painting-areas .eyebrow {
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .areas-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .area-chip {
+    background: var(--pd-white);
+    border: 1.5px solid #ddd;
+    border-radius: 999px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--pd-primary);
+    text-decoration: none;
+    transition: background 0.18s, border-color 0.18s, color 0.18s;
+  }
+
+  .kilkenny-county-painters-roof-painting .area-chip:hover {
+    background: var(--pd-accent);
+    border-color: var(--pd-accent);
+    color: var(--pd-white);
+  }
+
+  .kilkenny-county-painters-roof-painting .areas-text {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.72;
+    color: #444;
+  }
+
+  /* ══════════════════════════════════════════
+     CTA BAND
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .cta-band {
+    background: var(--pd-accent);
+    padding: 4.5rem 1.25rem;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .cta-band__title {
+    font-family: var(--pd-font-display);
+    font-size: clamp(2rem, 5.5vw, 3.6rem);
+    text-transform: uppercase;
+    line-height: 0.96;
+    color: var(--pd-white);
+    margin: 0 0 1rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .cta-band__sub {
+    color: rgba(255,255,255,0.88);
+    font-size: 1.05rem;
+    margin: 0 0 2rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .cta-band .btn-dark {
+    background: var(--pd-primary);
+    color: var(--pd-white);
+  }
+
+  /* ══════════════════════════════════════════
+     CONTACT FORM SECTION
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .roof-painting-contact {
+    background: var(--pd-white);
+    padding: 5rem 0;
+  }
+
+  .kilkenny-county-painters-roof-painting .roof-painting-contact .section-title,
+  .kilkenny-county-painters-roof-painting .roof-painting-contact .eyebrow {
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .contact-form-wrap {
+    max-width: 600px;
+    margin: 2.5rem auto 0;
+    background: var(--pd-light);
+    border-radius: 22px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 18px 50px rgba(20,24,28,0.10);
+  }
+
+  .kilkenny-county-painters-roof-painting .form-row {
+    margin-bottom: 1.2rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .form-row label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    color: var(--pd-primary);
+  }
+
+  .kilkenny-county-painters-roof-painting .form-row input,
+  .kilkenny-county-painters-roof-painting .form-row textarea,
+  .kilkenny-county-painters-roof-painting .form-row select {
+    width: 100%;
+    font-family: var(--pd-font-body);
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    background: var(--pd-white);
+    color: var(--pd-primary);
+    transition: border-color 0.18s;
+  }
+
+  .kilkenny-county-painters-roof-painting .form-row input:focus,
+  .kilkenny-county-painters-roof-painting .form-row textarea:focus,
+  .kilkenny-county-painters-roof-painting .form-row select:focus {
+    outline: none;
+    border-color: var(--pd-accent);
+  }
+
+  .kilkenny-county-painters-roof-painting .form-row textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .kilkenny-county-painters-roof-painting .form-submit {
+    width: 100%;
+    font-size: 1.05rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* ══════════════════════════════════════════
+     STATS BAND
+  ══════════════════════════════════════════ */
+  .kilkenny-county-painters-roof-painting .stats-band {
+    background: var(--pd-primary);
+    padding: 3.5rem 1.25rem;
+  }
+
+  .kilkenny-county-painters-roof-painting .stats-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-roof-painting .stat-item__num {
+    font-family: var(--pd-font-display);
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    color: var(--pd-accent);
+    line-height: 1;
+    display: block;
+  }
+
+  .kilkenny-county-painters-roof-painting .stat-item__label {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.88rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* ══════════════════════════════════════════
+     RESPONSIVE
+  ══════════════════════════════════════════ */
+  @media (min-width: 768px) {
+    .kilkenny-county-painters-roof-painting .intro-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .kilkenny-county-painters-roof-painting .intro-grid--reversed .intro-grid__text {
+      order: -1;
+    }
+
+    .kilkenny-county-painters-roof-painting .service-block {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .kilkenny-county-painters-roof-painting .service-block--reversed .service-block__img-wrap {
+      order: 2;
+    }
+
+    .kilkenny-county-painters-roof-painting .service-block--reversed .service-block__text {
+      order: 1;
+    }
+
+    .kilkenny-county-painters-roof-painting .process-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .kilkenny-county-painters-roof-painting .pricing-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .kilkenny-county-painters-roof-painting .why-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .kilkenny-county-painters-roof-painting .testimonials-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .kilkenny-county-painters-roof-painting .process-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .kilkenny-county-painters-roof-painting .why-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .kilkenny-county-painters-roof-painting .pricing-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .kilkenny-county-painters-roof-painting .testimonials-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .kilkenny-county-painters-roof-painting .btn,
+    .kilkenny-county-painters-roof-painting .process-card,
+    .kilkenny-county-painters-roof-painting .why-card,
+    .kilkenny-county-painters-roof-painting .pricing-card {
+      transition: none;
+    }
+  }
+</style>
+
+<!-- ── Schema: LocalBusiness + Service ─────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Kilkenny County Painters",
+  "description": "Professional roof painting Kilkenny. Expert roof coating and restoration across Kilkenny city and county.",
+  "url": "https://kilkennycountypainters.ie/roof-painting-kilkenny/",
+  "telephone": "+353873566934",
+  "email": "kilkennycountypainter@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kilkenny",
+    "addressCountry": "IE"
+  },
+  "areaServed": [
+    "Kilkenny City",
+    "Thomastown",
+    "Callan",
+    "Castlecomer",
+    "Graiguenamanagh",
+    "Urlingford",
+    "Bennetsbridge",
+    "Freshford",
+    "Piltown",
+    "Mullinavat"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "12"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Roof Painting Services Kilkenny",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roof Painting Kilkenny",
+          "description": "Full roof painting and coating service for domestic properties across Kilkenny."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roof Tile Cleaning & Treatment",
+          "description": "Pressure washing, biocide treatment, and sealing of roof tiles in Kilkenny."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ridge Tile Re-Pointing",
+          "description": "Re-pointing and resealing of ridge tiles as part of full roof restoration in Kilkenny."
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- ── Schema: FAQPage ──────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does roof painting last in Kilkenny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A professionally applied roof coating in Kilkenny typically lasts 10–15 years, depending on the coating product used, the condition of the tiles beforehand, and how well the roof was prepared. Kilkenny's wet Atlantic climate means preparation — especially thorough cleaning and biocide treatment — is critical to longevity. We only use proven, weather-resistant coatings suited to the Irish climate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is roof painting worth it in Ireland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for most homes it is excellent value. A roof paint or coating seals porous tiles, prevents moss and algae regrowth, stops water ingress, and dramatically improves kerb appeal — all for a fraction of the cost of a full roof replacement. In the Kilkenny climate, where moss and lichen spread quickly on north-facing roof slopes, regular coating can add years to the life of an existing roof."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you need to clean the roof before painting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Cleaning is the single most important step. We pressure-wash the entire roof surface to remove moss, lichen, dirt, and loose material, then apply a biocide treatment to kill any remaining biological growth at the root. Painting over a dirty or mossy roof will cause the coating to fail prematurely. We never skip this stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of roofs can you paint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We paint concrete and clay roof tiles, natural slate, fibre cement slates, and some flat-roof surfaces. Each material requires a specific primer or coating for proper adhesion. During our free survey we'll assess your roof type and recommend the most suitable product. We do not paint roofs in a structural condition that would be unsafe to walk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does roof painting cost in Kilkenny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roof painting costs vary based on roof size, pitch, accessibility, current condition, and the product specified. As a rough guide, a typical semi-detached house in Kilkenny might range from €800 to €2,500+, while larger detached homes will be higher. We provide fully itemised free quotes with no hidden extras — contact us for an accurate price for your property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the job take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most domestic roof painting projects in Kilkenny take 2–4 days to complete: one day for cleaning and preparation, a drying/settling period, and then one to two days for coating application. Larger or more complex roofs may take longer. We work efficiently to minimise disruption and always keep you updated on progress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will roof painting stop leaks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A roof coating can seal minor porosity in tiles and help reduce water ingress through degraded tile surfaces. However, it is not a substitute for structural repairs such as replacing cracked tiles, re-pointing ridge tiles, or fixing flashing. Before we paint, we always inspect for and flag any underlying repairs needed — and we can carry out re-pointing of ridge tiles as part of the job."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What colours can I choose for my roof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer a range of colours suitable for roof tiles, including terracotta, charcoal, slate grey, dark brown, and tile red. The available palette depends on the coating product best suited to your roof type. We bring colour samples to your free quote appointment so you can see the options in natural light before committing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you re-point ridge tiles as part of roof painting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Re-pointing cracked or crumbling ridge tile mortar is highly recommended before coating, as failed pointing allows water ingress and can cause ridge tiles to become loose. We can include ridge tile re-pointing as part of your full roof painting package in Kilkenny, giving you a complete, weatherproof finish in one visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you insured and experienced in working at height?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Kilkenny County Painters carry full public liability insurance, and our team is experienced in working safely at height on domestic roofs. We use appropriate access equipment for each job — ladders, scaffold towers, or scaffolding for larger roofs — in line with safe working practices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve areas outside Kilkenny city?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We cover the whole of County Kilkenny including Thomastown, Callan, Castlecomer, Graiguenamanagh, Urlingford, Bennetsbridge, Freshford, Piltown, Mullinavat, and surrounding townlands. If you're unsure whether we cover your area, just give us a call and we'll let you know straight away."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get a quote for roof painting in Kilkenny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Getting a quote is simple and completely free. Call us on +353873566934, email kilkennycountypainter@gmail.com, or fill out the contact form on this page. We'll arrange a convenient time to visit your property, assess the roof, and provide a written, no-obligation quote — usually within 48 hours."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="kilkenny-county-painters-roof-painting">
+
+  <!-- ══════════════════════════════════════
+       1. HERO
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-hero" aria-labelledby="hero-h1">
+    <img
+      class="roof-painting-hero__bg"
+      src="/assets/images/fresh-roof.jpeg"
+      alt="Freshly painted roof in Kilkenny by Kilkenny County Painters"
+      width="1440"
+      height="900"
+      loading="eager"
+    >
+    <div class="roof-painting-hero__content">
+      <span class="eyebrow" style="color: white;">Kilkenny's Trusted Painting Team</span>
+      <h1 class="roof-painting-hero__h1" id="hero-h1">
+        <span class="hero-highlight">Roof Painting</span><br>Kilkenny
+      </h1>
+      <p class="roof-painting-hero__sub">
+        Your roof takes the worst of the Irish weather every single day. Don't ignore it. Our professional roof painting Kilkenny service cleans, restores, and protects your tiles — and makes your home look brand new.
+      </p>
+      <div class="roof-painting-hero__ctas">
+        <a href="/contact/" class="btn btn-accent">Get a Free Quote</a>
+        <a href="tel:+353873566934" class="btn btn-outline">📞 Call Us Now</a>
+      </div>
+      <div class="roof-painting-hero__trust">
+        <span class="trust-chip">★ 5.0 Google Rating</span>
+        <span class="trust-chip">✔ Fully Insured</span>
+        <span class="trust-chip">✔ Free Survey &amp; Quote</span>
+        <span class="trust-chip">✔ Years of Experience</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Torn-paper divider -->
+  <svg class="hero-divider" viewBox="0 0 1440 88" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M0,88 L0,32 C120,68 240,10 380,44 C520,78 620,8 760,36 C900,64 1020,12 1160,42 C1300,72 1380,22 1440,50 L1440,88 Z" fill="#ffffff"/>
+  </svg>
+
+  <!-- ══════════════════════════════════════
+       2. INTRO / OVERVIEW
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-intro" aria-labelledby="intro-h2">
+    <div class="section-inner">
+      <div class="intro-grid intro-grid--reversed">
+        <div class="intro-grid__text">
+          <span class="eyebrow">Why Roof Painting Matters</span>
+          <h2 class="section-title" id="intro-h2">Roof Painting in Kilkenny — Done Right, First Time</h2>
+          <p>
+            A neglected roof doesn't just look tired — it's actively letting water in, growing moss and lichen that eat into tile surfaces, and losing you money every winter. Roof painting Kilkenny homeowners can rely on means more than slapping paint on old tiles. It means a full clean, a biocide treatment, any necessary pointing repairs, and a premium weather-resistant coating that's proven to last in the Irish climate.
+          </p>
+          <p>
+            At Kilkenny County Painters, we've been protecting roofs across Kilkenny city and county for years. Our team is trained, fully insured, and equipped with the right access gear for every job — from a modest semi-detached in the city to a large detached farmhouse out in the Kilkenny countryside. We communicate clearly at every stage, send photos of the work in progress, and never cut corners on preparation. That's why our customers come back — and why they recommend us to their neighbours.
+          </p>
+          <p>
+            Whether you've spotted moss spreading across your north-facing slope, your tiles are going porous and damp is getting in, or you simply want to refresh the look of your home before putting it on the market, we're the team to call. Fast free quotes, honest advice, and a finish you'll be proud of.
+          </p>
+          <div class="trust-badge-row">
+            <div class="trust-badge">
+              <span class="stars" aria-label="5 stars">★★★★★</span>
+              <span>5.0 Google Rating</span>
+            </div>
+            <div class="trust-badge">
+              <span>🛡️</span>
+              <span>Fully Insured</span>
+            </div>
+            <div class="trust-badge">
+              <span>📍</span>
+              <span>Based in Kilkenny</span>
+            </div>
+            <div class="trust-badge">
+              <span>🏠</span>
+              <span>Years of Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="intro-grid__image">
+          <img
+            src="/assets/images/fresh-roof.jpeg"
+            alt="Professional roof painting result on a Kilkenny home"
+            width="700"
+            height="525"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats band -->
+  <div class="stats-band" aria-label="Key facts about Kilkenny County Painters">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-item__num">5.0</span>
+        <span class="stat-item__label">Google Rating</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">100%</span>
+        <span class="stat-item__label">Free Quotes</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">10–15</span>
+        <span class="stat-item__label">Years Coating Life</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__num">KK</span>
+        <span class="stat-item__label">County-Wide Cover</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       3. ALTERNATING SERVICE BLOCKS
+  ══════════════════════════════════════ -->
+  <section class="service-blocks" aria-labelledby="services-h2">
+    <div class="section-inner">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="section-title" id="services-h2">Our Roof Painting &amp; Restoration Services</h2>
+
+      <!-- Block 1: Roof Painting & Coating (normal) -->
+      <div class="service-block">
+        <div class="service-block__img-wrap">
+          <div class="before-after-pair">
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintbefore4.jpeg"
+                alt="Roof before painting in Kilkenny — mossy, weathered tiles"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintafter4.jpeg"
+                alt="Roof after professional painting in Kilkenny — clean, fresh tiles"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-block__text">
+          <span class="eyebrow">Service 01</span>
+          <h3>Roof Tile Painting &amp; Coating</h3>
+          <p>
+            Our core service. We apply a high-performance, breathable roof coating to your tiles after thorough preparation — extending tile life by years and dramatically improving your home's appearance. We use weather-resistant products specifically formulated for the Irish climate, tested to withstand driving rain, UV, frost, and rapid temperature changes.
+          </p>
+          <p>
+            The coating we apply bonds deeply to tile surfaces, sealing micro-cracks and pores that allow water ingress. You'll notice the difference immediately — a rich, uniform finish that makes the whole house look cared for. And with a coating that can last 10–15 years, it's one of the best-value home improvements you can make in Kilkenny.
+          </p>
+          <p>
+            We work on concrete tiles, clay tiles, natural and fibre cement slates. If you're not sure whether your roof is suitable, just give us a call — we're always happy to advise honestly, even if the answer is that painting isn't right for you.
+          </p>
+          <a href="/contact/" class="learn-link">Get a Free Roof Survey →</a>
+        </div>
+      </div>
+
+      <!-- Block 2: Roof Cleaning & Biocide (reversed) -->
+      <div class="service-block service-block--reversed">
+        <div class="service-block__img-wrap">
+          <div class="before-after-pair">
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintb41.jpeg"
+                alt="Mossy roof tiles before cleaning and treatment in Kilkenny"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintafter41.jpeg"
+                alt="Roof tiles after pressure wash and biocide treatment in Kilkenny"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-block__text">
+          <span class="eyebrow">Service 02</span>
+          <h3>Pressure Washing &amp; Biocide Treatment</h3>
+          <p>
+            Painting over a dirty roof is the number one cause of premature coating failure. That's why our preparation stage is thorough and non-negotiable. We pressure-wash your entire roof to remove moss, lichen, algae, dirt, and all loose or flaking material before we apply a single drop of coating.
+          </p>
+          <p>
+            Following the pressure wash, we apply a professional-grade biocide treatment that kills any biological growth — including spores that aren't visible yet — right down to the root. Without this step, moss will regrow beneath the coating and lift it within a few years. With it, you get the clean substrate and the long-lasting result you're paying for.
+          </p>
+          <p>
+            Our cleaning and biocide service can also be booked as a standalone treatment, without painting, if you simply want to clear moss and algae and keep your roof healthy between coating cycles.
+          </p>
+          <a href="/contact/" class="learn-link">Book a Roof Clean →</a>
+        </div>
+      </div>
+
+      <!-- Block 3: Ridge Tile Re-Pointing (normal) -->
+      <div class="service-block">
+        <div class="service-block__img-wrap">
+          <div class="before-after-pair">
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintb43.jpeg"
+                alt="Cracked ridge tile mortar before re-pointing in Kilkenny"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintafter43.jpeg"
+                alt="Neatly re-pointed ridge tiles after restoration work in Kilkenny"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-block__text">
+          <span class="eyebrow">Service 03</span>
+          <h3>Ridge Tile Re-Pointing</h3>
+          <p>
+            Ridge tiles sit at the very peak of your roof — exposed to wind, frost, and rain from every direction. The mortar bedding them in place cracks and erodes over time, and once it fails, ridge tiles can rock, shift, and eventually come down entirely. It's a safety risk as well as a weathertightness problem.
+          </p>
+          <p>
+            We re-bed and re-point ridge tiles using a flexible, crack-resistant mortar designed to move with the roof as it expands and contracts through the seasons. We check every ridge tile for stability, remove and re-lay any that have shifted, and apply a neat, professional pointing finish that integrates seamlessly with the rest of the roof.
+          </p>
+          <p>
+            Re-pointing is included in our full roof restoration package and can also be done as a standalone repair. It's well worth combining with painting for the most complete, weatherproof result.
+          </p>
+          <a href="/contact/" class="learn-link">Ask About Re-Pointing →</a>
+        </div>
+      </div>
+
+      <!-- Block 4: Full Roof Restoration (reversed) -->
+      <div class="service-block service-block--reversed">
+        <div class="service-block__img-wrap">
+          <div class="before-after-pair">
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintb44.jpeg"
+                alt="Badly weathered roof before full restoration in Kilkenny"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="before-after-pair__slot">
+              <img
+                src="/assets/images/roof-paintafter44.jpeg"
+                alt="Fully restored and painted roof after Kilkenny County Painters work"
+                width="400"
+                height="300"
+                loading="lazy"
+              >
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-block__text">
+          <span class="eyebrow">Service 04</span>
+          <h3>Full Roof Restoration Package</h3>
+          <p>
+            Our most comprehensive option — and the one most Kilkenny homeowners choose when they want the job done properly and not again for the next decade. The full restoration includes: pressure wash, biocide treatment, ridge tile inspection and re-pointing where needed, any necessary minor tile repairs, and a full two-coat premium coating application.
+          </p>
+          <p>
+            You get one team, one visit (typically 2–4 days), and one beautifully finished roof. We manage the entire process, keep you informed with photos throughout, and leave the site clean and tidy. It's the stress-free, complete solution for homeowners who are done doing things twice.
+          </p>
+          <p>
+            This package works particularly well before selling a property, after a harsh winter, or when an insurance company has flagged the roof condition during a home survey. We've helped many Kilkenny homeowners get their roofs into the condition needed to satisfy surveyors and estate agents.
+          </p>
+          <a href="/contact/" class="learn-link">Get a Full Restoration Quote →</a>
+        </div>
+      </div>
+
+      <!-- Block 5: Video showcase -->
+      <div class="service-block">
+        <div class="service-block__img-wrap" style="aspect-ratio:16/9; min-height:220px;">
+          <video
+            src="/assets/images/Roof-paint-video.mp4"
+            width="700"
+            height="394"
+            autoplay
+            muted
+            loop
+            playsinline
+            style="width:100%;height:100%;object-fit:cover;display:block;"
+            aria-label="Time-lapse of a roof painting job in Kilkenny by Kilkenny County Painters"
+          ></video>
+        </div>
+        <div class="service-block__text">
+          <span class="eyebrow">See the Work</span>
+          <h3>Real Results on Kilkenny Roofs</h3>
+          <p>
+            Pictures and video tell the story better than any paragraph. Here's a roof restoration we completed for a Kilkenny homeowner — from a moss-covered, porous surface to a clean, coated finish that'll last well over a decade. The transformation takes just a few days on site.
+          </p>
+          <p>
+            Every job is different — size, tile type, condition, colour choice — but our process is always the same: thorough preparation, quality products, professional application, honest communication throughout. Scroll through our before-and-after gallery above to see more Kilkenny examples.
+          </p>
+          <a href="/contact/" class="learn-link">Request More Photos →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       4. PROCESS
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-process" aria-labelledby="process-h2">
+    <div class="section-inner">
+      <span class="eyebrow">No
+ Surprises</span>
+      <h2 class="section-title" id="process-h2">How It Works</h2>
+      <p class="process-intro">Four simple steps from first call to finished roof. Clear communication the whole way through.</p>
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-card__num">01</div>
+          <div class="process-card__title">Contact Us</div>
+          <p class="process-card__body">Call, email, or fill out the form on this page. Tell us your address and what you're looking for. We'll get back to you fast — usually the same day — to arrange a convenient time for a free survey.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__num">02</div>
+          <div class="process-card__title">Free Survey &amp; Quote</div>
+          <p class="process-card__body">One of our team comes out to your property, assesses the roof, discusses your colour preferences, and flags any repairs needed. You get a full written quote — no vague estimates, no hidden extras. Zero obligation.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__num">03</div>
+          <div class="process-card__title">The Work</div>
+          <p class="process-card__body">We arrive on the agreed date, fully equipped. Day one is preparation — pressure wash, biocide, any repairs. Then the coating goes on. We send you progress photos, keep noise and disruption to a minimum, and leave the site clean every evening.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__num">04</div>
+          <div class="process-card__title">Aftercare &amp; Peace of Mind</div>
+          <p class="process-card__body">Once complete, we do a final walk-round with you to make sure you're delighted. We advise you on the coating's curing period and any simple maintenance tips. Your roof is now protected — and you can forget about it for years to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PRICING GUIDANCE
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-pricing" aria-labelledby="pricing-h2">
+    <div class="section-inner">
+      <span class="eyebrow">Transparent Pricing</span>
+      <h2 class="section-title" id="pricing-h2">What Does Roof Painting Cost in Kilkenny?</h2>
+      <p style="max-width:720px; line-height:1.75; color:#444; font-size:1rem;">
+        We won't give you a price without seeing your roof — every job is different. But here's an honest guide to the factors that drive cost, so you know roughly what to expect before we visit.
+      </p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-card__label">Semi-Detached Home</div>
+          <div class="pricing-card__range">From ~€1200</div>
+          <p>A typical Kilkenny semi-detached with a standard pitched roof and good access. Price depends on tile condition and whether ridge re-pointing is needed. Includes full clean, biocide, and two-coat application.</p>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__label">Detached Family Home</div>
+          <div class="pricing-card__range">€1,500 – €2,500+</div>
+          <p>Larger roof area, more materials and labour time. Complexity of roof shape, number of hips and valleys, and condition all influence price. We'll survey and quote accurately before any commitment.</p>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__label">Standalone Roof Clean</div>
+          <div class="pricing-card__range">From ~€850</div>
+          <p>Pressure wash and biocide treatment without full coating. Ideal for maintaining a previously coated roof or preparing for a future paint job. Removes moss, lichen, and algae thoroughly.</p>
+        </div>
+      </div>
+      <p class="pricing-disclaimer">
+        <strong>Important:</strong> These are indicative ranges only — not fixed prices. The only accurate price is the one we give you after surveying your specific roof. All our quotes are written, itemised, and completely free. Prices include VAT. We never add surprise charges after work begins.
+        <br><br>
+        Factors that can increase cost include: very steep pitch requiring extra safety equipment; severely deteriorated tiles needing heavy preparation; difficult access (e.g. over conservatories or outbuildings); significant ridge re-pointing required; or remote rural locations in County Kilkenny requiring additional travel.
+      </p>
+      <div style="margin-top:2rem;">
+        <a href="/contact/" class="btn btn-accent">Get Your Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       5. WHY CHOOSE US
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-why" aria-labelledby="why-h2">
+    <div class="section-inner">
+      <span class="eyebrow">Why Kilkenny County Painters</span>
+      <h2 class="section-title" id="why-h2">The Kilkenny Roof Painting Team You Can Trust</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card__icon">★</div>
+          <div class="why-card__title">5-Star Rated</div>
+          <p>We carry a perfect 5.0 Google rating. Our customers consistently highlight our professionalism, clear communication, and the quality of the finished result. Don't take our word for it — read the reviews.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🛡️</div>
+          <div class="why-card__title">Fully Insured</div>
+          <p>We carry full public liability insurance on every job. You can book with complete confidence that your property — and your peace of mind — is protected throughout the work.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">📸</div>
+          <div class="why-card__title">Progress Updates</div>
+          <p>We send you photos throughout the job. You'll always know exactly what's happening on your roof, even if you're not home. Transparent from start to finish — no guessing, no surprises.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">📍</div>
+          <div class="why-card__title">Genuinely Local</div>
+          <p>We're based in Kilkenny and we work exclusively across Kilkenny city and county. We know the local weather conditions, the typical roof types in the area, and the specific challenges that come with painting roofs in the Irish climate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       6. FAQ
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-faq" aria-labelledby="faq-h2">
+    <div class="section-inner">
+      <span class="eyebrow">Your Questions Answered</span>
+      <h2 class="section-title" id="faq-h2">Roof Painting Kilkenny — FAQs</h2>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q1">How long does roof painting last in Kilkenny?</h3>
+          <p class="faq-item__a">A professionally applied roof coating in Kilkenny typically lasts 10–15 years, depending on the coating product used, the condition of the tiles beforehand, and how well the roof was prepared. Kilkenny's wet Atlantic climate means preparation — especially thorough cleaning and biocide treatment — is critical to longevity. We only use proven, weather-resistant coatings suited to the Irish climate.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q2">Is roof painting worth it in Ireland?</h3>
+          <p class="faq-item__a">Yes, for most homes it is excellent value. A roof paint or coating seals porous tiles, prevents moss and algae regrowth, stops water ingress, and dramatically improves kerb appeal — all for a fraction of the cost of a full roof replacement. In the Kilkenny climate, where moss and lichen spread quickly on north-facing roof slopes, regular coating can add years to the life of an existing roof.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q3">Do you need to clean the roof before painting?</h3>
+          <p class="faq-item__a">Absolutely. Cleaning is the single most important step. We pressure-wash the entire roof surface to remove moss, lichen, dirt, and loose material, then apply a biocide treatment to kill any remaining biological growth at the root. Painting over a dirty or mossy roof will cause the coating to fail prematurely. We never skip this stage.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q4">What types of roofs can you paint?</h3>
+          <p class="faq-item__a">We paint concrete and clay roof tiles, natural slate, fibre cement slates, and some flat-roof surfaces. Each material requires a specific primer or coating for proper adhesion. During our free survey we'll assess your roof type and recommend the most suitable product. We do not paint roofs in a structural condition that would be unsafe to walk.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q5">How much does roof painting cost in Kilkenny?</h3>
+          <p class="faq-item__a">Roof painting costs vary based on roof size, pitch, accessibility, current condition, and the product specified. As a rough guide, a typical semi-detached house in Kilkenny might range from €800 to €2,500+, while larger detached homes will be higher. We provide fully itemised free quotes with no hidden extras — contact us for an accurate price for your property.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q6">How long does the job take?</h3>
+          <p class="faq-item__a">Most domestic roof painting projects in Kilkenny take 2–4 days to complete: one day for cleaning and preparation, a drying/settling period, and then one to two days for coating application. Larger or more complex roofs may take longer. We work efficiently to minimise disruption and always keep you updated on progress.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q7">Will roof painting stop leaks?</h3>
+          <p class="faq-item__a">A roof coating can seal minor porosity in tiles and help reduce water ingress through degraded tile surfaces. However, it is not a substitute for structural repairs such as replacing cracked tiles, re-pointing ridge tiles, or fixing flashing. Before we paint, we always inspect for and flag any underlying repairs needed — and we can carry out re-pointing of ridge tiles as part of the job.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q8">What colours can I choose for my roof?</h3>
+          <p class="faq-item__a">We offer a range of colours suitable for roof tiles, including terracotta, charcoal, slate grey, dark brown, and tile red. The available palette depends on the coating product best suited to your roof type. We bring colour samples to your free quote appointment so you can see the options in natural light before committing.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q9">Do you re-point ridge tiles as part of roof painting?</h3>
+          <p class="faq-item__a">Yes. Re-pointing cracked or crumbling ridge tile mortar is highly recommended before coating, as failed pointing allows water ingress and can cause ridge tiles to become loose. We can include ridge tile re-pointing as part of your full roof painting package in Kilkenny, giving you a complete, weatherproof finish in one visit.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q10">Are you insured and experienced in working at height?</h3>
+          <p class="faq-item__a">Yes. Kilkenny County Painters carry full public liability insurance, and our team is experienced in working safely at height on domestic roofs. We use appropriate access equipment for each job — ladders, scaffold towers, or scaffolding for larger roofs — in line with safe working practices.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q11">Do you serve areas outside Kilkenny city?</h3>
+          <p class="faq-item__a">Yes. We cover the whole of County Kilkenny including Thomastown, Callan, Castlecomer, Graiguenamanagh, Urlingford, Bennetsbridge, Freshford, Piltown, Mullinavat, and surrounding townlands. If you're unsure whether we cover your area, just give us a call and we'll let you know straight away.</p>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <h3 class="faq-item__q" id="faq-q12">How do I get a quote for roof painting in Kilkenny?</h3>
+          <p class="faq-item__a">Getting a quote is simple and completely free. Call us on <a href="tel:+353873566934" style="color:var(--pd-accent);font-weight:700;">+353 87 356 6934</a>, email <a href="mailto:kilkennycountypainter@gmail.com" style="color:var(--pd-accent);font-weight:700;">kilkennycountypainter@gmail.com</a>, or fill out the contact form on this page. We'll arrange a convenient time to visit your property, assess the roof, and provide a written, no-obligation quote — usually within 48 hours.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       7. TESTIMONIALS
+  ══════════════════════════════════════ 
+  <section class="roof-painting-testimonials" aria-labelledby="testimonials-h2">
+    <div class="section-inner">
+      <span class="eyebrow">What Customers Say</span>
+      <h2 class="section-title" id="testimonials-h2">Real Reviews From Real Customers</h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <span class="testimonial-card__stars" aria-label="5 stars">★★★★★</span>
+          <p class="testimonial-card__body">"Kevin and the team were brilliant to deal with, very professional job with updates throughout. We are delighted with the new outdoor space!"</p>
+          <p class="testimonial-card__author">— Kimberly, Tipp</p>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="testimonial-card__stars" aria-label="5 stars">★★★★★</span>
+          <p class="testimonial-card__body">"Dealing remotely with Kevin and his company were so professional, clear communication with lots of photos of the work at all stages was fantastic. I highly recommend this company."</p>
+          <p class="testimonial-card__author">— Gary, Tipp</p>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="testimonial-card__stars" aria-label="5 stars">★★★★★</span>
+          <p class="testimonial-card__body">"Absolutely thrilled with the roof — hadn't realised how bad the moss had gotten until I saw the before photos Kevin sent. Looks like a completely new roof now. Would 100% recommend."</p>
+          <p class="testimonial-card__author">— ⭐ Verified Google Review — Kilkenny</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+-->
+  <!-- ══════════════════════════════════════
+       8. AREAS SERVED
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-areas" aria-labelledby="areas-h2">
+    <div class="section-inner">
+      <span class="eyebrow">Covering All of County Kilkenny</span>
+      <h2 class="section-title" id="areas-h2">Roof Painting Across Kilkenny &amp; Surrounds</h2>
+      <div class="areas-chips">
+        <span class="area-chip">Kilkenny City</span>
+        <span class="area-chip">Thomastown</span>
+        <span class="area-chip">Callan</span>
+        <span class="area-chip">Castlecomer</span>
+        <span class="area-chip">Graiguenamanagh</span>
+        <span class="area-chip">Urlingford</span>
+        <span class="area-chip">Bennetsbridge</span>
+        <span class="area-chip">Freshford</span>
+        <span class="area-chip">Piltown</span>
+        <span class="area-chip">Mullinavat</span>
+        <span class="area-chip">Stoneyford</span>
+        <span class="area-chip">Gowran</span>
+        <span class="area-chip">Ballyragget</span>
+        <span class="area-chip">Inistioge</span>
+        <span class="area-chip">Knocktopher</span>
+      </div>
+      <p class="areas-text">
+        Kilkenny County Painters provide professional roof painting Kilkenny-wide — from the city centre out to the quieter rural townlands across the county. Whether you're in a housing estate in the city, a period home in Thomastown, a cottage near Graiguenamanagh, or a farmhouse outside Castlecomer, we'll come to you for a free survey and quote. Not sure if you're in our area? Just call — if we can get to you, we will.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA BAND
+  ══════════════════════════════════════ -->
+  <section class="cta-band" aria-label="Call to action — get a free roof painting quote in Kilkenny">
+    <div class="cta-band__title">Ready for a New-Looking Roof?</div>
+    <p class="cta-band__sub">Fast free quotes. No pressure. Kilkenny's most trusted painting team.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+      <a href="/contact/" class="btn btn-dark">Get My Free Quote</a>
+      <a href="tel:+353873566934" class="btn btn-outline" style="border-color:var(--pd-primary);color:var(--pd-primary); color:white">📞 +353 87 356 6934</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT FORM
+  ══════════════════════════════════════ -->
+  <section class="roof-painting-contact" aria-labelledby="contact-h2">
+    <div class="section-inner">
+      <span class="eyebrow">Get in Touch</span>
+      <h2 class="section-title" id="contact-h2">Request Your Free Roof Survey</h2>
+      <div class="contact-form-wrap">
+        <form name="quote-roof-painting" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="quote-roof-painting">
+          <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+          <div class="form-row">
+            <label for="rp-name">Your Name</label>
+            <input type="text" id="rp-name" name="name" placeholder="e.g. John Murphy" required>
+          </div>
+          <div class="form-row">
+            <label for="rp-phone">Phone Number</label>
+            <input type="tel" id="rp-phone" name="phone" placeholder="e.g. 087 123 4567" required>
+          </div>
+          <div class="form-row">
+            <label for="rp-email">Email Address</label>
+            <input type="email" id="rp-email" name="email" placeholder="e.g. john@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="rp-location">Your Town / Area in Kilkenny</label>
+            <input type="text" id="rp-location" name="location" placeholder="e.g. Thomastown, Kilkenny City…" required>
+          </div>
+          <div class="form-row">
+            <label for="rp-service">Service Required</label>
+            <select id="rp-service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option value="Full Roof Restoration">Full Roof Restoration</option>
+              <option value="Roof Tile Painting & Coating">Roof Tile Painting &amp; Coating</option>
+              <option value="Roof Cleaning & Biocide">Roof Cleaning &amp; Biocide Treatment</option>
+              <option value="Ridge Tile Re-Pointing">Ridge Tile Re-Pointing</option>
+              <option value="Not Sure / Advice Needed">Not Sure — I'd Like Advice</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="rp-message">Anything Else We Should Know?</label>
+            <textarea id="rp-message" name="message" placeholder="Tell us about your roof — size, condition, any concerns…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent form-submit">Send My Quote Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,877 @@
+---
+title: 'Painting Services Kilkenny | Kilkenny County Painters'
+description: 'Explore our full painting services in Kilkenny — exterior, interior & roof painting. Fast free quotes, professional finish, 5-star rated. Call today.'
+preloadImg: '/assets/images/hero-2.jpeg'
+permalink: '/services/'
+eleventyNavigation:
+  key: Services
+  order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<style>
+  :root {
+    --pd-primary: #1A1A1A;
+    --pd-accent: #D32F2F;
+    --pd-light: #F4F6F9;
+    --pd-white: #ffffff;
+    --pd-font-display: 'Anton', sans-serif;
+    --pd-font-body: 'Barlow', sans-serif;
+  }
+
+  .kilkenny-county-painters-services *,
+  .kilkenny-county-painters-services *::before,
+  .kilkenny-county-painters-services *::after {
+    box-sizing: border-box;
+  }
+
+  .kilkenny-county-painters-services {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: var(--pd-font-body);
+    color: var(--pd-primary);
+    background: var(--pd-white);
+  }
+
+  /* ── HERO ── */
+  .kilkenny-county-painters-services .services-hero {
+    position: relative;
+    background: var(--pd-primary);
+    min-height: 72vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .kilkenny-county-painters-services .services-hero__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.28;
+    background: #2a2a2a;
+  }
+
+  .kilkenny-county-painters-services .services-hero__inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 5rem 1.25rem 4rem;
+  }
+
+  .kilkenny-county-painters-services .services-hero__eyebrow {
+    display: inline-block;
+    font-family: var(--pd-font-body);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    margin-bottom: 1rem;
+  }
+
+  .kilkenny-county-painters-services .services-hero__h1 {
+    font-family: var(--pd-font-display);
+    font-size: clamp(2.9rem, 9vw, 6rem);
+    line-height: 0.92;
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 0 1.4rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .services-hero__highlight {
+    position: relative;
+    display: inline-block;
+    color: var(--pd-primary);
+    z-index: 1;
+  }
+
+  .kilkenny-county-painters-services .services-hero__highlight::before {
+    content: '';
+    position: absolute;
+    inset: -4px -10px -6px -8px;
+    background: var(--pd-accent);
+    border-radius: 44% 56% 62% 38% / 58% 42% 60% 40%;
+    transform: rotate(-1.5deg) skewX(-2deg);
+    z-index: -1;
+  }
+
+  .kilkenny-county-painters-services .services-hero__sub {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: rgba(255,255,255,0.85);
+    max-width: 540px;
+    margin-bottom: 2rem;
+    line-height: 1.55;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .btn {
+    display: inline-block;
+    font-family: var(--pd-font-display);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: var(--pd-accent);
+    color: var(--pd-white);
+    padding: 0.85rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 24px rgba(211,47,47,0.35);
+  }
+
+  .kilkenny-county-painters-services .btn:hover,
+  .kilkenny-county-painters-services .btn:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(211,47,47,0.45);
+    outline: none;
+  }
+
+  .kilkenny-county-painters-services .btn:focus-visible {
+    outline: 3px solid var(--pd-accent);
+    outline-offset: 3px;
+  }
+
+  /* ── TORN DIVIDER ── */
+.kilkenny-county-painters-services .torn-divider svg {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+@media (min-width: 768px) {
+  .kilkenny-county-painters-services .torn-divider svg {
+    height: 100px;
+  }
+}
+
+  /* ── SECTION COMMON ── */
+  .kilkenny-county-painters-services .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .kilkenny-county-painters-services .section--light {
+    background: var(--pd-light);
+  }
+
+  .kilkenny-county-painters-services .section--dark {
+    background: var(--pd-primary);
+    color: var(--pd-white);
+  }
+
+  .kilkenny-county-painters-services .section--white {
+    background: var(--pd-white);
+  }
+
+  .kilkenny-county-painters-services .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .eyebrow {
+    display: inline-block;
+    font-family: var(--pd-font-body);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--pd-accent);
+    margin-bottom: 0.6rem;
+  }
+
+  .kilkenny-county-painters-services .section-title {
+    font-family: var(--pd-font-display);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 1.25rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .body-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 680px;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+  }
+
+  /* ── SERVICE CARDS ── */
+  .kilkenny-county-painters-services .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .kilkenny-county-painters-services .service-card {
+    background: var(--pd-white);
+    border-radius: 22px;
+    box-shadow: 0 18px 50px rgba(20,24,28,0.10);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .kilkenny-county-painters-services .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px rgba(20,24,28,0.16);
+  }
+
+  .kilkenny-county-painters-services .service-card__img-wrap {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #e5e5e5;
+    overflow: hidden;
+  }
+
+  .kilkenny-county-painters-services .service-card__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .kilkenny-county-painters-services .service-card__body {
+    padding: 1.5rem 1.5rem 1.75rem;
+  }
+
+  .kilkenny-county-painters-services .service-card__title {
+    font-family: var(--pd-font-display);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--pd-primary);
+    margin: 0 0 0.6rem;
+  }
+
+  .kilkenny-county-painters-services .service-card__desc {
+    font-size: 0.97rem;
+    line-height: 1.65;
+    color: #444;
+    margin-bottom: 1.1rem;
+  }
+
+  .kilkenny-county-painters-services .service-card__link {
+    font-family: var(--pd-font-body);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--pd-accent);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .kilkenny-county-painters-services .service-card__link:hover {
+    text-decoration: underline;
+  }
+
+  /* ── BENEFITS ── */
+  .kilkenny-county-painters-services .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .kilkenny-county-painters-services .benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .kilkenny-county-painters-services .benefits-list li .icon {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--pd-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pd-white);
+    font-size: 1rem;
+  }
+
+  /* ── PROCESS ── */
+  .kilkenny-county-painters-services .process-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .kilkenny-county-painters-services .process-step {
+    background: var(--pd-white);
+    border-radius: 22px;
+    padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+    box-shadow: 0 18px 50px rgba(20,24,28,0.08);
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+
+  .kilkenny-county-painters-services .process-step__num {
+    font-family: var(--pd-font-display);
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--pd-accent);
+    flex-shrink: 0;
+  }
+
+  .kilkenny-county-painters-services .process-step__title {
+    font-family: var(--pd-font-display);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 0 0 0.35rem;
+    color: var(--pd-primary);
+  }
+
+  .kilkenny-county-painters-services .process-step__desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  /* ── TRUST / TESTIMONIALS ── */
+  .kilkenny-county-painters-services .trust-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .kilkenny-county-painters-services .trust-card {
+    background: var(--pd-white);
+    border-radius: 22px;
+    padding: 1.5rem;
+    box-shadow: 0 18px 50px rgba(20,24,28,0.10);
+  }
+
+  .kilkenny-county-painters-services .trust-card__stars {
+    color: #FBBF24;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .kilkenny-county-painters-services .trust-card__quote {
+    font-size: 0.97rem;
+    line-height: 1.65;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .trust-card__author {
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--pd-accent);
+  }
+
+  .kilkenny-county-painters-services .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .kilkenny-county-painters-services .trust-badge {
+    background: var(--pd-light);
+    border-radius: 12px;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--pd-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  .kilkenny-county-painters-services .trust-badge .badge-icon {
+    color: var(--pd-accent);
+    font-size: 1.2rem;
+  }
+
+  /* ── FAQ ── */
+  .kilkenny-county-painters-services .faq-list {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .kilkenny-county-painters-services .faq-item {
+    background: var(--pd-white);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 8px 28px rgba(20,24,28,0.08);
+  }
+
+  .kilkenny-county-painters-services .faq-item__q {
+    font-family: var(--pd-font-display);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    color: var(--pd-primary);
+    margin: 0 0 0.5rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .faq-item__a {
+    font-size: 0.97rem;
+    line-height: 1.65;
+    color: #444;
+    margin: 0;
+    overflow-wrap: break-word;
+  }
+
+  /* ── CTA BAND ── */
+  .kilkenny-county-painters-services .cta-band {
+    background: var(--pd-accent);
+    padding: 4rem 1.25rem;
+    text-align: center;
+  }
+
+  .kilkenny-county-painters-services .cta-band__title {
+    font-family: var(--pd-font-display);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: var(--pd-white);
+    margin: 0 0 1rem;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .cta-band__sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
+  .kilkenny-county-painters-services .btn--white {
+    background: var(--pd-white);
+    color: var(--pd-accent);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  .kilkenny-county-painters-services .btn--white:hover,
+  .kilkenny-county-painters-services .btn--white:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.2);
+  }
+
+  /* ── REDUCED MOTION ── */
+  @media (prefers-reduced-motion: reduce) {
+    .kilkenny-county-painters-services .btn,
+    .kilkenny-county-painters-services .service-card {
+      transition: none;
+    }
+  }
+
+  /* ── TABLET ── */
+  @media (min-width: 768px) {
+    .kilkenny-county-painters-services .section {
+      padding: 5rem 2rem;
+    }
+
+    .kilkenny-county-painters-services .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kilkenny-county-painters-services .benefits-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kilkenny-county-painters-services .process-steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kilkenny-county-painters-services .trust-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* ── DESKTOP ── */
+  @media (min-width: 1024px) {
+    .kilkenny-county-painters-services .section {
+      padding: 6rem 2rem;
+    }
+
+    .kilkenny-county-painters-services .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .kilkenny-county-painters-services .process-steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
+
+<!-- Service JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Painting Services Kilkenny",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Kilkenny County Painters",
+    "telephone": "+353873566934",
+    "email": "kilkennycountypainter@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kilkenny",
+      "addressCountry": "IE"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "2"
+    }
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Kilkenny"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Painting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Exterior House Painting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Interior Painting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roof Painting"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- FAQPage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does painting cost in Kilkenny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every job is different — size, surface condition, and paint quality all affect the price. We provide free, no-obligation quotes so you know exactly what you're paying before any work starts. No hidden costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will the job take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard interior room takes one to two days. Full exterior house painting typically takes three to five days depending on the size of the property and the weather. We'll give you a realistic timeline in your quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will there be much mess or disruption?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We take protecting your home seriously. Floors, furniture, and fittings are covered before we begin. We clean up fully at the end of each day and leave the site tidy when we're done."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you guarantee your painting work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We stand behind every job we do. If anything isn't right, we'll come back and fix it — no arguments, no call-out charges. Your satisfaction is the standard we hold ourselves to."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What time of year is best for exterior painting in Kilkenny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Late spring through early autumn is ideal when temperatures are stable and rain is less frequent. That said, we monitor conditions carefully and will advise if a booking needs to be adjusted to get the best finish."
+      }
+    }
+  ]
+}
+</script>
+
+<div class="kilkenny-county-painters-services">
+
+  <!-- ── HERO ── -->
+  <section class="services-hero" aria-labelledby="services-h1">
+    <img
+      src="/assets/images/hero-2.jpeg"
+      alt="Professional painters at work in Kilkenny"
+      class="services-hero__img"
+      width="1600"
+      height="900"
+      loading="lazy"
+    >
+    <div class="services-hero__inner">
+      <span class="services-hero__eyebrow" style="color: white;">Kilkenny's Trusted Painting Team</span>
+      <h1 class="services-hero__h1" id="services-h1">
+        Services in<br>
+        <span class="services-hero__highlight">Kilkenny</span>
+      </h1>
+      <p class="services-hero__sub">From a fresh coat inside to a full exterior transformation — we handle it all. Professional results, fair prices, zero hassle.</p>
+      <a href="/contact/" class="btn">Get a Fast Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Torn-paper divider -->
+
+
+  <!-- ── OVERVIEW ── -->
+  <section class="section section--light" aria-labelledby="overview-title">
+    <div class="container">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="section-title" id="overview-title">Painting Done Properly</h2>
+      <p class="body-text">A bad paint job is expensive twice — once when you pay for it, and again when it peels in two years. We've seen the fallout from rushed, corner-cutting work across Kilkenny and we've built our reputation fixing it. When you book Kilkenny County Painters, you get tradespeople who prep surfaces correctly, use quality materials, and take the time to get every edge right.</p>
+      <p class="body-text">Whether it's a single bedroom, a full home interior, an exterior that's seen better days, or a roof that needs fresh protective coating — our team turns up on time, keeps you informed throughout, and leaves the place cleaner than we found it. Five stars on Google. Every time.</p>
+    </div>
+  </section>
+
+  <!-- ── SERVICE CARDS ── -->
+  <section class="section section--white" aria-labelledby="services-title">
+    <div class="container">
+      <span class="eyebrow">Our Services</span>
+      <h2 class="section-title" id="services-title">What We Cover</h2>
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="service-card__img-wrap">
+            <img
+              src="/assets/images/house-paint-1.jpg"
+              alt="Exterior house painting in Kilkenny"
+              width="800"
+              height="450"
+              loading="lazy"
+            >
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Exterior House Painting</h3>
+            <p class="service-card__desc">Protect your home from Kilkenny's weather while dramatically boosting kerb appeal. We prep, prime, and paint — no shortcuts.</p>
+            <a href="/contact/" class="service-card__link">Get a Quote →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__img-wrap">
+            <img
+              src="/assets/images/house-paint-3.jpeg"
+              alt="Interior painting services in Kilkenny"
+              width="800"
+              height="450"
+              loading="lazy"
+            >
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Interior Painting</h3>
+            <p class="service-card__desc">Clean lines, perfect coverage, and barely any disruption to your day. We'll transform any room — kitchen to bedroom to hallway.</p>
+            <a href="/contact/" class="service-card__link">Get a Quote →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__img-wrap">
+            <img
+              src="/assets/images/house-paint-4.jpeg"
+              alt="Roof painting in Kilkenny"
+              width="800"
+              height="450"
+              loading="lazy"
+            >
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Roof Painting</h3>
+            <p class="service-card__desc">Extend your roof's lifespan and stop moss and algae in their tracks. Professional coating that holds up season after season.</p>
+            <a href="/roof-painting-kilkenny/" class="service-card__link">Learn More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BENEFITS ── -->
+  <section class="section section--light" aria-labelledby="benefits-title">
+    <div class="container">
+      <span class="eyebrow">What's Included</span>
+      <h2 class="section-title" id="benefits-title">Every Job Includes</h2>
+      <ul class="benefits-list" role="list">
+        <li>
+          <span class="icon" aria-hidden="true">✓</span>
+          <span><strong>Full surface preparation</strong> — filling, sanding, priming before a drop of paint goes on</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">✓</span>
+          <span><strong>Premium paint products</strong> — durable, long-lasting finishes chosen for the job</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">✓</span>
+          <span><strong>Full site protection</strong> — floors, furniture, and fittings covered throughout</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">✓</span>
+          <span><strong>Progress updates</strong> — you're kept in the loop at every stage, no radio silence</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">✓</span>
+          <span><strong>Clean-up on completion</strong> — we leave your home spotless, not paint-speckled</span>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">✓</span>
+          <span><strong>Workmanship guarantee</strong> — not happy? We come back and sort it, no charge</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ── -->
+  <section class="section section--white" aria-labelledby="process-title">
+    <div class="container">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="section-title" id="process-title">4 Simple Steps</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="process-step__num" aria-hidden="true">01</span>
+          <div>
+            <h3 class="process-step__title">Contact Us</h3>
+            <p class="process-step__desc">Call or fill in our quick form.We'll get back to you fast — usually the same day.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num" aria-hidden="true">02</span>
+          <div>
+            <h3 class="process-step__title">Free Quote</h3>
+            <p class="process-step__desc">We visit, assess the job, and give you a clear, no-obligation price. No vague estimates — a real number.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num" aria-hidden="true">03</span>
+          <div>
+            <h3 class="process-step__title">The Work</h3>
+            <p class="process-step__desc">Our team gets on with it — on time, on schedule, with regular updates so you're never left wondering.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num" aria-hidden="true">04</span>
+          <div>
+            <h3 class="process-step__title">Aftercare</h3>
+            <p class="process-step__desc">We walk you through the finished work, answer any questions, and back every job with our workmanship guarantee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY US / TESTIMONIALS ── 
+  <section class="section section--light" aria-labelledby="trust-title">
+    <div class="container">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2 class="section-title" id="trust-title">Kilkenny's 5-Star Painters</h2>
+      <div class="trust-badges">
+        <div class="trust-badge"><span class="badge-icon" aria-hidden="true">★</span> 5.0 Google Rating</div>
+        <div class="trust-badge"><span class="badge-icon" aria-hidden="true">🛡</span> Workmanship Guaranteed</div>
+        <div class="trust-badge"><span class="badge-icon" aria-hidden="true">📋</span> Free Detailed Quotes</div>
+        <div class="trust-badge"><span class="badge-icon" aria-hidden="true">📸</span> Photo Updates Throughout</div>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="trust-card__quote">"Kevin and the team were brilliant to deal with, very professional job with updates throughout. We are delighted with the new outdoor space!"</p>
+          <span class="trust-card__author">— Kimberly, Tipp</span>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="trust-card__quote">"Dealing remotely with Kevin and his company were so professional, clear communication with lots of photos of the work at all stages was fantastic. I highly recommend this company."</p>
+          <span class="trust-card__author">— Gary, Tipp</span>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <!-- ── FAQ ── -->
+  <section class="section section--white" aria-labelledby="faq-title">
+    <div class="container">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title" id="faq-title">Common Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <h3 class="faq-item__q">How much does painting cost in Kilkenny?</h3>
+          <p class="faq-item__a">Every job is different — size, surface condition, and paint quality all affect the price. We provide free, no-obligation quotes so you know exactly what you're paying before any work starts. No hidden costs.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__q">How long will the job take?</h3>
+          <p class="faq-item__a">A standard interior room takes one to two days. Full exterior house painting typically takes three to five days depending on the size of the property and the weather. We'll give you a realistic timeline in your quote.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__q">Will there be much mess or disruption?</h3>
+          <p class="faq-item__a">We take protecting your home seriously. Floors, furniture, and fittings are covered before we begin. We clean up fully at the end of each day and leave the site tidy when we're done.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__q">Do you guarantee your painting work?</h3>
+          <p class="faq-item__a">Yes. We stand behind every job we do. If anything isn't right, we'll come back and fix it — no arguments, no call-out charges. Your satisfaction is the standard we hold ourselves to.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-item__q">What time of year is best for exterior painting in Kilkenny?</h3>
+          <p class="faq-item__a">Late spring through early autumn is ideal when temperatures are stable and rain is less frequent. That said, we monitor conditions carefully and will advise if a booking needs to be adjusted to get the best finish.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container">
+      <h2 class="cta-band__title" id="cta-title">Ready to Get Started?</h2>
+      <p class="cta-band__sub">Fast free quotes. No pressure. Just honest, professional painting in Kilkenny.</p>
+      <a href="/contact/" class="btn btn--white">Book Your Free Quote Today</a>
+    </div>
+  </section>
+
+</div>
+
+{% endblock %}

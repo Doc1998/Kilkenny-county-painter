@@ -1,0 +1,319 @@
+<style>
+  :root {
+    --pd-primary: #1A1A1A;
+    --pd-accent: #D32F2F;
+    --pd-light: #F4F6F9;
+    --pd-white: #ffffff;
+    --pd-font-display: 'Anton', sans-serif;
+    --pd-font-body: 'Barlow', sans-serif;
+  }
+
+  .pd-footer {
+    background: #111111;
+    color: #c8cdd6;
+    font-family: var(--pd-font-body);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .pd-footer__main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.25rem 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem 2rem;
+  }
+
+  .pd-footer__col-heading {
+    font-family: var(--pd-font-display);
+    font-size: 1.05rem;
+    letter-spacing: 0.07em;
+    color: var(--pd-white);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.6rem;
+  }
+
+  .pd-footer__col-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 3px;
+    background: var(--pd-accent);
+    border-radius: 999px;
+  }
+
+  .pd-footer__about-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+
+  .pd-footer__about-logo img {
+    height: 96px;
+    width: auto;
+    filter: brightness(0) invert(1);
+  }
+
+  .pd-footer__about-logo-text {
+    font-family: var(--pd-font-display);
+    font-size: 1.05rem;
+    color: var(--pd-white);
+    letter-spacing: 0.03em;
+    line-height: 1.15;
+  }
+
+  .pd-footer__about-logo-text span {
+    color: var(--pd-accent);
+  }
+
+  .pd-footer__blurb {
+    color: #9aa0ab;
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
+
+  .pd-footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .pd-footer__links a {
+    color: #9aa0ab;
+    text-decoration: none;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    transition: color 0.2s;
+  }
+
+  .pd-footer__links a::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid var(--pd-accent);
+    border-right: 2px solid var(--pd-accent);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  .pd-footer__links a:hover { color: var(--pd-white); }
+
+  .pd-footer__contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: #9aa0ab;
+  }
+
+  .pd-footer__contact-item svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--pd-accent);
+  }
+
+  .pd-footer__contact-item a {
+    color: #9aa0ab;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .pd-footer__contact-item a:hover { color: var(--pd-white); }
+
+  .pd-footer__hours {
+    font-size: 0.8rem;
+    color: #6e7580;
+    margin-top: 0.2rem;
+  }
+
+  .pd-footer__bottom {
+    border-top: 1px solid rgba(255,255,255,0.07);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pd-footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .pd-footer__socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    color: #9aa0ab;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+  }
+
+  .pd-footer__socials a:hover {
+    background: var(--pd-accent);
+    color: var(--pd-white);
+  }
+
+  .pd-footer__legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    text-align: center;
+  }
+
+  .pd-footer__copyright {
+    font-size: 0.8rem;
+    color: #6e7580;
+  }
+
+  .pd-footer__copyright strong {
+    color: #9aa0ab;
+    font-weight: 600;
+  }
+
+  .pd-footer__credit {
+    font-size: 0.75rem;
+    color: #4e545e;
+  }
+
+  .pd-footer__credit a {
+    color: #6e7580;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .pd-footer__credit a:hover { color: var(--pd-accent); }
+
+  @media (max-width: 600px) {
+    .pd-footer__main {
+      grid-template-columns: 1fr;
+      padding: 2.5rem 1.25rem 1.5rem;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .pd-footer__main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+<footer class="pd-footer" role="contentinfo">
+  <div class="pd-footer__main">
+
+    <div class="pd-footer__col">
+      <a href="/" class="pd-footer__about-logo" aria-label="Kilkenny County Painters — Home">
+        <img src="/assets/images/logo.png" alt="Kilkenny County Painters logo" width="100" height="40" onerror="this.style.display='none'">
+        
+      </a>
+      <p class="pd-footer__blurb">Professional painting services across Kilkenny and surrounding areas. From exterior and interior painting to roof coatings — quality finishes, reliable tradespeople, and honest pricing every time.</p>
+    </div>
+
+    <div class="pd-footer__col">
+      <h3 class="pd-footer__col-heading">Quick Links</h3>
+      <ul class="pd-footer__links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/roof-painting-kilkenny/">Roof Painting</a></li>
+      </ul>
+    </div>
+
+    <div class="pd-footer__col">
+      <h3 class="pd-footer__col-heading">Our Services</h3>
+      <ul class="pd-footer__links">
+        <li><a href="/services/">Exterior House Painting</a></li>
+        <li><a href="/services/">Interior Painting</a></li>
+        <li><a href="/roof-painting-kilkenny/">Roof Painting</a></li>
+      </ul>
+    </div>
+
+    <div class="pd-footer__col">
+      <h3 class="pd-footer__col-heading">Contact Us</h3>
+
+      <div class="pd-footer__contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/>
+        </svg>
+        <div>
+          <a href="tel:+353873566934">+353 87 356 6934</a>
+        </div>
+      </div>
+
+      <div class="pd-footer__contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <div>
+          <a href="mailto:kilkennycountypainter@gmail.com">kilkennycountypainter@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="pd-footer__contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <div>Kilkenny, Ireland</div>
+      </div>
+
+      <div class="pd-footer__contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm.01 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
+        </svg>
+        <div>
+          <!-- VERIFY hours -->
+          Mon–Fri: 8:00am – 6:00pm<br>
+          <span class="pd-footer__hours">Sat: 9:00am – 4:00pm · Sun: Closed</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="pd-footer__bottom">
+    <div class="pd-footer__socials">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.851s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </svg>
+      </a>
+      <a href="https://wa.me/353873566934" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="pd-footer__legal">
+      <p class="pd-footer__copyright">&copy; <script>document.write(new Date().getFullYear())</script> <strong>Kilkenny County Painters</strong>. All rights reserved.</p>
+      <p class="pd-footer__credit">Website by <a href="https://acutis.ie" target="_blank" rel="noopener noreferrer">Acutis</a></p>
+    </div>
+  </div>
+</footer>
