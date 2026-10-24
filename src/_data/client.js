@@ -1,8 +1,8 @@
 module.exports = {
     "name": "Kilkenny County Painters",
     "email": "kilkennycountypainter@gmail.com",
-    "phoneForTel": "+353873566934",
-    "phoneFormatted": "+353873566934",
+    "phoneForTel": "+353874664601",
+    "phoneFormatted": "+353874664601",
     "address": {
         "lineOne": "Kilkenny",
         "lineTwo": "",
